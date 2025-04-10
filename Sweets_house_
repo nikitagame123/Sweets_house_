@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Мамин магазин</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-title {
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Выберите продукт</h1>
+  <div class="gallery">
+    <div class="card">
+      <img src="images/1.png" alt="Продукт 1">
+      <div class="card-title">Продукт 1</div>
+    </div>
+    <div class="card">
+      <img src="images/2.png" alt="Продукт 2">
+      <div class="card-title">Продукт 2</div>
+    </div>
+    <div class="card">
+      <img src="images/3.png" alt="Продукт 3">
+      <div class="card-title">Продукт 3</div>
+    </div>
+  </div>
+
+</body>
+</html>
